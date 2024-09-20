@@ -1,0 +1,72 @@
+body {
+    display: flex; /* Utilizza Flexbox per centrare il contenuto */
+    justify-content: center; /* Centra orizzontalmente il contenuto */
+    align-items: center; /* Centra verticalmente il contenuto */
+    text-align: center;
+}
+
+.container,.h1 {
+    text-align: center; /* Allinea il testo al centro */
+    max-width: 550px; /* Imposta la larghezza massima del contenitore */
+    max-height: 400px; /* Imposta l'altezza massima del contenitore */
+    border-radius: 10px; /* Arrotonda i bordi del contenitore */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Aggiunge un'ombra leggera per l'effetto di profondità */
+    padding: 20px; /* Aggiunge uno spazio interno al contenitore */
+    text-decoration: #333; /* Colore del testo scuro */
+
+}
+
+input[type="file"] {
+    padding: 10px; /* Aggiunge padding attorno all'input */
+    border-radius: 5px; /* Arrotonda i bordi dell'input */
+}
+.image-container {
+    width: 150px; /* Larghezza fissa del contenitore per l'immagine */
+    height: 150px; /* Altezza fissa del contenitore per l'immagine */
+    overflow: hidden; /* Nasconde il contenuto che eccede le dimensioni del contenitore */
+    margin: 0 auto; /* Centra il contenitore dell'immagine orizzontalmente */
+}
+
+.image-container img {
+    width: 100%; /* L'immagine occupa tutta la larghezza del contenitore */
+    height: auto; /* Mantiene le proporzioni dell'immagine */
+    display: block; /* Rimuove eventuali spazi sotto l'immagine */
+}
+
+.palette {
+    display: flex; /* Utilizza Flexbox per disporre i colori */
+    flex-wrap: wrap; /* Permette ai contenuti di andare su più righe se necessario */
+    justify-content: center; /* Centra i colori all'interno del contenitore */
+    gap: 5px; /* Spazio tra i box di colore */
+}
+
+.color-box {
+    width: 90px; /* Larghezza fissa del box del colore */
+    height: 90px; /* Altezza fissa del box del colore */
+    border-radius: 5px; /* Arrotonda gli angoli del box del colore */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Aggiunge un'ombra leggera al box */
+    position: relative; /* Imposta la posizione relativa per gestire il posizionamento interno */
+}
+
+.color-box:hover {
+    transform: scale(1.1); /* Effetto di ingrandimento quando si passa con il mouse */
+}
+
+.color-box .color-code {
+    position: absolute; /* Posizionamento assoluto all'interno del box */
+    bottom: 0; /* Si posiziona in basso al box */
+    left: 0; /* Si allinea a sinistra */
+    width: 100%; /* Occupa tutta la larghezza del box */
+    background: rgba(0, 0, 0, 0.6); /* Sfondo semi-trasparente per il codice del colore */
+    color: #fff; /* Colore del testo bianco */
+    font-size: 12px; /* Dimensione del font per il codice del colore */
+    text-align: center; /* Centra il testo all'interno del box */
+    padding: 2px 0; /* Aggiunge uno spazio verticale all'interno del box del codice colore */
+    border-bottom-left-radius: 5px; /* Arrotonda l'angolo in basso a sinistra */
+    border-bottom-right-radius: 5px; /* Arrotonda l'angolo in basso a destra */
+}
+
+.color-name {
+    font-size: 12px; /* Dimensione del font per il nome del colore */
+    color: #fff; /* Colore del testo bianco */
+}
